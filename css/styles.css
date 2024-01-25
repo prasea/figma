@@ -1,0 +1,196 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Utilities */
+.m-2{margin: 3rem;}
+.p-2{padding: 3rem;}
+.mb-1{margin-bottom: 1.5rem;}
+.mb-2{margin-bottom: 2rem;}
+.mb-3{margin-bottom: 3rem;}
+.py-2{padding: 3rem 0;}
+.my-1{margin: 1.5rem 0;}
+.my-2{margin: 2rem 0;}
+.card-title{
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  color: #333;
+}
+.card-text{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #858A8F;
+}
+
+.l-heading{
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 73px;
+  color: #333;
+}
+.lead{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 35px;
+  color: #858a8f;
+}
+
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #858A8F;
+  padding: 14px 16px;
+  background-color: inherit;
+}
+
+.primary-button{
+  text-decoration: none;
+  color: #fff;
+  background-color: #0176FF;
+  padding: 1rem 1.5rem;
+  border-radius: .5rem;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.container{
+  max-width: 1100px;
+  margin-inline: auto;
+  overflow: hidden;
+}
+#showcase{
+  display: flex;
+  min-height: 400px;
+}
+#showcase .showcase-content{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  text-align: left;
+  flex : 1;
+}
+#showcase .showcase-content .showcase-link{
+  border: none;
+  background: none;
+  color: #397EFF;
+  text-align: left;  
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+#showcase .showcase-img{
+  flex: 1;
+  background: #333 url('../images/Image-12-cropped.png') no-repeat center center/cover;
+  position: relative;
+}
+#showcase .showcase-img .play-btn{
+  position : absolute;
+  top: 2rem;
+  left: 2rem;
+}
+#what {
+  background-color: #f4f4f4;
+}
+#what .what-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;  
+}
+#what .what-cards{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+#what .what-cards .card{
+  background-color: #fff;
+  padding: 1rem;
+}
+
+#dream-job{
+  display: flex;  
+  min-height: 400px;
+}
+#dream-job .job-img{
+  background: #333 url('../images/job-img.png') no-repeat center center/cover;
+  flex: 1;
+}
+#dream-job .job-text{
+  flex: 1;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 3rem;
+}
+
+#big-footer{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  color: #858A8F;
+}
+#big-footer .about{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#big-footer .footer-text{
+  grid-column-start: 1;
+  grid-column-end: 7;
+  text-align: left;
+  padding: 1rem;
+}
+#big-footer .footer-link-list{
+  list-style: none;
+  margin: 1rem 0;
+}
+#big-footer .footer-link-list li{
+  padding: 0.25rem 0;
+}
+#big-footer .parent-link-heading{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #333;
+}
+#big-footer .social i{
+  background-color: #f4f4f4;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+}
+
+.about-footer-text{
+  padding-right: 5rem;
+  line-height: 35px;
+  font-weight: 500;
+  font-size: 20px;
+}

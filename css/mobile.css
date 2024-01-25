@@ -1,0 +1,127 @@
+.header{
+  flex-direction: column;
+  padding: 0;
+}
+.primary-button{
+  margin-top: 1rem;
+  padding: .5rem 1rem;
+}
+#showcase{
+  position: relative;
+  background: #333 url('../images/Image-12-cropped.png') no-repeat center center/cover;
+  margin: 0.75rem 0;
+}
+#showcase .showcase-content{  
+  display: flex;
+  justify-content: center;
+  /* Overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0, 0,0.5);
+}
+#showcase .showcase-img{
+  display: none;
+}
+
+#showcase .showcase-content .showcase-link{
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 0.5rem;
+  display: inline;
+}
+
+#showcase .showcase-content .l-heading, 
+#showcase .showcase-content .lead, 
+#dream-job .job-text .l-heading, 
+#dream-job .job-text .lead{
+  color : #fff;
+}
+#showcase .showcase-content .l-heading, 
+#what .what-text .l-heading, 
+#dream-job .job-text .l-heading{
+  font-size: 30px;
+  line-height: 40px;
+}
+#showcase .showcase-content .lead, 
+#what .what-text .lead, 
+#dream-job .job-text .lead {
+  font-size: 16px;
+  line-height: 22px;
+}
+#what .what-text .lead{
+  margin: 1rem 0;
+}
+#what .what-cards{
+ grid-template-columns: 1fr ; 
+}
+#what .what-cards .card{
+  margin: 1rem;
+  display: flex;
+}
+#what .what-cards .card img{
+  object-fit: contain;
+  margin-right: 1rem;
+}
+#what .what-cards .card .card-title{
+  margin: 0.5rem 0;
+}
+.card-title{
+  font-size: 22px;
+  line-height: 28px;
+}
+#dream-job{
+  display: block;
+  background: #333 url('../images/job-img.png') no-repeat center center/cover;
+  position: relative;
+  padding: none !important;
+}
+#dream-job .job-img{
+  display: none;
+}
+#dream-job .job-text{  
+  margin: 0;
+  padding: 0 1rem;
+  /* Overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0, 0,0.5);
+}
+
+#big-footer{
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+}
+#big-footer .about{
+  grid-column-start: 1;
+  grid-column-end: 5;
+  padding: 0 1rem;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-footer-text{
+  padding: 0;
+  line-height: 25px;
+  font-weight: 500;
+  font-size: 20px;
+}
+#big-footer .footer-text{
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+#big-footer .home, 
+#big-footer .pages,
+#big-footer .blog,
+#big-footer .portfolio{
+  margin-left: 1rem;
+}   
+#big-footer .portfolio{
+  margin-right: 1rem;
+}
